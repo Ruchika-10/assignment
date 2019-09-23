@@ -1,0 +1,70 @@
+(1)
+var a={name:"Ruchika", age:20
+}
+var b={name:"Harshita",age:16}
+console.log(isEqual(a,b));  // True
+
+
+(2)
+We can create a class in javascript using 'class' keyword
+eg- class A
+   { constructor(name)
+     {
+       this._name=name;
+     }
+     display()
+     {
+       console.log("Name is-"+this._name+" Age is-"+this.age);
+     }
+   }
+   class B extends A
+   { constructor(age)
+     { super("Ruhi");
+       this.age=age;
+     }
+   }
+   let ob=new B("Ruchika");
+   ob.display();
+
+(3)
+We use destructing in Javascript so that we change convert our array/object into individual elements/values. 
+eg- let n=[1,2,3];
+    let [a,b]=n;
+    console.log(a);   //1
+    console.log(b);   //2
+It makes the work lot more easier as earlier we used to assign values individually like a=n[0], b=n[1]
+
+We can also skip values of some of the array elements that we don't want.
+eg- let n=[1,2,3,4];
+    let [a,,,d]=n;
+    console.log(a);   //1
+    console.log(d);   //4
+
+
+(4)
+In Es6 there was a nhttps://coryrylan.com/blog/javascript-es6-class-syntaxew introduction of ` sign which helps to save the string in the same way as they were decalared and helps to make the work easier as we need to use different functions or operators to get this task done.
+eg- var a=`Ruchika
+           Syal';
+    console.log(a);   // "Ruchika
+                          Syal"
+
+And in string or template literals with the help of `` whatever escape operators we will mention in it, those operators will be executed first and then the string will be saved.
+eg-   var a=`Ruchika\nSyal`;
+      console.log(a);  // "Ruchika
+                           Syal"
+
+(5)
+ var a=[1,2];
+ var b=[3,4];
+ var c=b[Symbol.iterator]();
+let arr4=a.map(x=>{ 
+a=[...a,c.next().value]
+})
+console.log(a);
+
+
+
+(6)
+([a-zA-Z0-9].*(@)([a-zA-Z](.)(com|co.in|org)))
+
+    
